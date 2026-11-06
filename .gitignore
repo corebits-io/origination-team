@@ -1,0 +1,38 @@
+# Never commit your workspace. It holds target company names, owner names,
+# and the reasoning behind a live acquisition thesis. Owner names are
+# personal data in most jurisdictions. Keep the workspace outside this repo,
+# or ignored inside it.
+workspace/
+my-*/
+runs/
+drafts/
+
+# Your own filled-in working files, if you keep them in here.
+# Anchored to the repo root so the templates/ copies stay tracked.
+/BUY-BOX.md
+/targets.csv
+/outreach-queue.csv
+/run-state.md
+/market-map-*.md
+/rubric-*.md
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Data exports
+*.csv
+!templates/*.csv
+!samples/*.csv
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
